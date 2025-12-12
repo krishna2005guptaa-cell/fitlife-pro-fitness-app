@@ -1,0 +1,151 @@
+.nutrition-planner {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.nutrition-planner h2 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.nutrition-summary {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.macro-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.macro-card h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.macro-card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.meal-suggestions {
+  margin: 2rem 0;
+}
+
+.meal-suggestions h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.suggestion-card {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.suggestion-card:hover {
+  border-color: #11998e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.suggestion-card h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.suggestion-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.add-meal {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.add-meal h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.meal-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.meal-form input {
+  padding: 0.8rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.meal-form button {
+  background: #11998e;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.meal-form button:hover {
+  background: #0e8074;
+}
+
+.recent-meals {
+  margin-top: 2rem;
+}
+
+.recent-meals h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.meal-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.meal-name {
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+  min-width: 150px;
+}
