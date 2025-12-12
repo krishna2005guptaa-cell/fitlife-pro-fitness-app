@@ -1,0 +1,143 @@
+.workout-tracker {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.workout-tracker h2 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.workout-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  border: 3px solid transparent;
+}
+
+.workout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.workout-card.selected {
+  border-color: #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+.workout-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.workout-card h3 {
+  margin: 0.5rem 0;
+}
+
+.workout-details {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.workout-exercises {
+  margin: 1rem 0;
+}
+
+.workout-exercises ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.workout-exercises li {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border-left: 3px solid #667eea;
+}
+
+.workout-config {
+  margin: 1.5rem 0;
+}
+
+.config-item {
+  margin: 1rem 0;
+}
+
+.config-item label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.config-item input[type="range"] {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.config-item select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+}
+
+.log-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.log-btn:hover {
+  background: #5568d3;
+  transform: scale(1.02);
+}
+
+.recent-workouts {
+  margin-top: 2rem;
+}
+
+.recent-workouts h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.workout-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workout-item span {
+  font-weight: 500;
+}
